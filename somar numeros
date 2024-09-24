@@ -1,0 +1,4 @@
+int num1 = 100;
+int num2 = 250;
+int total1 = num1 + num2;
+System.out.println(total1);
