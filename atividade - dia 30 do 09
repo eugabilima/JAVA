@@ -1,0 +1,119 @@
+EXERCÍCIO 1: Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o aluno é aprovado). Escrever também a média calculada.
+
+int num1, num2, media;
+Scanner scan = new Scanner(System.in);
+System.out.println(x: "Digite nota 1");
+n1 = scan.next.in();
+System.out.println(x: "Digite nota 2");
+n1 = scan.next.in();
+media (num1 + num2)/2;
+System.out.println("A media é: " + media);
+
+EXERCÍCIO 2: Ler o ano atual e o ano de nascimento de uma pessoa. Escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que a pessoa nasceu)
+
+Scanner scanner = new Scanner(System.in);
+	System.out.print("Digite o ano atual: ");
+	int anoAtual = scanner.nextInt();        
+	System.out.print("Digite seu ano de nascimento: ");
+	int anoNascimento = scanner.nextInt();
+	int idade = anoAtual - anoNascimento;
+
+	if (idade >= 18) {
+	System.out.println("Você poderá votar este ano.");
+	} else {
+	System.out.println("Você não poderá votar este ano.");
+	}
+
+EXERCÍCIO 3: Faça um programa que peça 4 notas bimestrais do aluno e calcule a sua média.
+int num1 = 8;
+int num2 = 9;
+int num3 = 7;
+int num4 = 5;
+int total1 = num1+num2+num3+num4;
+int total2 = total1/4;
+		System.out.println("A media e:" + total2 );
+
+EXERCÍCIO 4: Faça um programa que converta metros para centímetros
+System.out.println("Vamos calcular, entre com o número em metros:");
+int num1;
+Scanner tec = new Scanner (System.in);
+num1 = tec.nextInt();
+int total = num1 * 10 * 10;
+System.out.println("Em centímetros fica: " +total);
+
+EXERCÍCIO 5: Faça um programa que pergunte quanto você ganha por hora trabalhada no mês. Calcule e mostre o total do seu salário.
+System.out.print("Digite quanto você ganha por hora: ");
+	int anoAtual = scanner.nextInt();        
+	int total: anoAtual * 31;
+	System.out.println("Você ganha: " + total);
+
+EXERCÍCIO 6: Pedro deseja comprar uma nova bolsa, mas estipulou que o preço esteja entre 50 e 80 reais. Entre com um valor X e diga se o valor da bolsa de Pedro foi ou não dentro do orçamento que ele previu.
+ int max = 80;
+   int bolsa;
+
+   Scanner tec = new Scanner (System.in);
+   System.out.print("Qual o valor da bolsa?");
+   bolsa =  tec.nextInt();
+		       
+   if (bolsa <= max ) {
+	 System.out.println("está dentro do orçamento");
+}
+
+else {
+	System.out.println("não está no orçamento");
+}	
+
+EXERCÍCIO 7: Faça um programa que leia dois números e imprima o maior deles
+System.out.print("Ente com dois números");	
+		
+		int num1;
+		int num2;
+		Scanner tec = new Scanner (System.in);
+			num1 = tec.nextInt();
+			num2 = tec.nextInt();
+
+	if (num1 > num2) {
+		System.out.print("O primeiro numero é maior que o segundo ");
+	}
+	else {
+    System.out.print("Osegundo numero é maior que o primeiro ");
+	}	
+
+EXERCÍCIO 8: Faça um programa que leia dois números e imprima se é negativo ou positivo.
+System.out.print("Ente com dois números");	
+		
+		int num1;
+		int num2;
+		Scanner tec = new Scanner (System.in);
+			num1 = tec.nextInt();
+			num2 = tec.nextInt();
+
+if (num1 < 0) {
+	System.out.print("O primeiro numero é negativo e ");
+}
+else {
+	System.out.print("O primeiro numero é positivo e ");
+}
+
+if (num2 < 0) {
+	System.out.print("o segundo numero é negativo");
+}
+else {
+	System.out.print("o segundo numero é positivo");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
