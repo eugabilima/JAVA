@@ -16,7 +16,7 @@ public class Aulapoo {
 
     static void inicio() {
         Scanner tec = new Scanner(System.in);
-        System.out.println("Seja bem-vindo às lojas americanas, antes de começarmos, qual é seu nome?");
+        System.out.println("Seja bem-vindo à nossa Loja, qual é seu nome?");
         String nome = tec.nextLine();
         if (nome.equals("gerente")) {
         } else {
@@ -51,11 +51,11 @@ public class Aulapoo {
             System.out.println(" ");
             System.out.println("<-------------------------------------------->");
             System.out.println(" ");
-            System.out.println("1. Batata pringles sabor cebola e creme - R$10,99 | Estoque: " + estoqueP);
-            System.out.println("2. Barra de chocolate ao leite garoto 80g - R$3,99 | Estoque: " + estoqueC);
+            System.out.println("1. Sabonete liquido - R$10,99 | Estoque: " + estoqueP);
+            System.out.println("2. Barra de sabonete clareador - R$3,99 | Estoque: " + estoqueC);
             System.out.println("3. Fralda descartável huggies tripla proteção m 42 unidades - R$32,99 | Estoque: " + estoqueF);
-            System.out.println("4. Amendoim japonês dori 90g - R$2,99 | Estoque: " + estoqueA);
-            System.out.println("5. Fritadeira Air Fryer Britânia 4,2L 1500W - R$170,90 | Estoque: " + estoqueE);
+            System.out.println("4. fini - R$2,99 | Estoque: " + estoqueA);
+            System.out.println("5. hidratante Nivea - R$170,90 | Estoque: " + estoqueE);
             System.out.println("<-------------------------------------------->");
             System.out.println("Insira abaixo o número do produto e logo após, a quantidade.");
             String comprando = tec.nextLine();
