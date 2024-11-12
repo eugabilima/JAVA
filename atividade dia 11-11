@@ -1,7 +1,41 @@
-package br.com.aulapoo;
-
+package controle_de_estoque;
+import java.security.PublicKey;
 import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		Scanner tec = new Scanner(System.in);
+		String produto;
+		String nome;
+	String fun;
+	String code;
+	String v1;
+	String estoque;
+	String cadastro;
+	
+	
+		System.out.println("Nome do funcionario: ");
+		fun= tec.next();
+System.out.println("Vamos inciar os cadastros,"+ fun);
+		System.out.println("coloque o nome do seu produto");
+		produto= tec.next();
+System.out.println("crie o codigo do produto");
+code= tec.next();
+System.out.println("Coloque o valor ");
+v1= tec.next();
+System.out.println("coloque a quantidade de produtos disponiveis");
+estoque= tec.next();
+System.out.println("Nome:"+ produto + "\n Codigo:"+ code + "\n Valor desejado:"+v1 + "\n estoque:"+ estoque + "\n produto cadastrado com Sucesso!");
 
+	
+}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+package br.com.aulapoo;
+import java.util.Scanner;
 public class Aulapoo {
 
     int codigo;
