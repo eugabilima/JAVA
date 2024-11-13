@@ -1,107 +1,87 @@
-package ContaBancaria;
-import java.util.*;
-public class Main {
+package contabancaria;
+import java.util.Scanner;
+public class Main{
+public class Main extends Pessoa{
 
 	public static void main(String[] args) {
-		Fisica fis = new Fisica();
-    Juridica jud = new Juridica();
-				
+	public void main(String[] args) {
+
+
 		String nome;
-		int saldo = 0;
-		int cpf = 0;
-		int cnpj = 0;
-		int alternativa = 0;
-		int valor1 = 0;
-		int valor2 = 0;	
-		
-		Scanner tec = new Scanner (System.in);
-		
-		System.out.println("Digite 6 para Pessoa  Física, Digite 7 para Pessoa Jurídica");
-		alternativa = tec.nextInt();
-
-	if (alternativa == 6) {
-			System.out.println("Informe seu nome: ");
-			nome = tec.nextLine();
-			tec.nextLine();
-			System.out.println("Informe seu CPF: ");
-			cpf = tec.nextInt();
-			System.out.println("Informe seu saldo atual: ");
-			saldo = tec.nextInt();
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-package ContaBancaria;
-import java.util.*;
-public class Fisica {
-
-   public void Fisica(){
-   Scanner tec = new Scanner (System.in);  
-  
-  String nome;
-		int saldo = 0;
-		int cpf = 0;
-		int cnpj = 0;
-		int alternativa = 0;
-		int valor1 = 0;
-		int valor2 = 0;
-  
-	} else if(alternativa == 7){
-		System.out.println("Informe seu nome: ");
-		nome = tec.nextLine();
-		tec.nextLine();
-		System.out.println("Informe seu CNPF: ");
-		cnpj = tec.nextInt();
-		System.out.println("Informe seu saldo atual: ");
-		saldo = tec.nextInt();
-	}
-}
--------------------------------------------------------------------------------------------------------------------------------------------------------------
-	
-else{
-		System.out.println("Número não encontrado, digite novamente");
-	}
-	
-
-		System.out.println(" 1- Adicionar valor \n 2- Subtrair valor \n 3- Saldo atual \n 4- Encerrar procedimento");
-		alternativa = tec.nextInt();
-		
-		if(alternativa == 1) {
-			System.out.println("Quanto quer adicionar? \n 1- 100 \n 2- 200 \n 3- 300");
-			valor1 = tec.nextInt();
-			if(valor1 == 1) {
-				saldo += 100;
-				System.out.println("Seu saldo atual e: "+saldo);
-			}else if (valor1 == 2) {
-				saldo += 200;
-				System.out.println("Seu saldo atual e: "+saldo);
-			}else if (valor1 == 3) {
-				saldo += 300;
-				System.out.println("Seu saldo atual e: "+saldo);
-			}else {
-				System.out.println("Informe um valor valido");
-			}
-				
-		}else if (alternativa == 2){
-			System.out.println("Quanto quer subtrair? \n 1- 100 \n 2- 200 \n 3- 300");
-			valor2 = tec.nextInt();
-			if(valor2 == 1) {
-				saldo -= 100;
-				System.out.println("Seu saldo atual e: "+saldo);
-			}else if (valor2 == 2) {
-				saldo -= 200;
-				System.out.println("Seu saldo atual e: "+saldo);
-			}else if (valor2 == 3) {
-				saldo -= 300;
-				System.out.println("Seu saldo atual e: "+saldo);
-			}else {
-				System.out.println("Informe um valor valido");
-			}
-		}else if (alternativa == 3) {
-			System.out.println("Seu saldo atual e: "+saldo);
-		}else if (alternativa == 4) {
-			System.out.println("Procedimento encerrado");
-		}else {
-			System.out.println("Digite um valor valido");
+@@ -85,3 +85,113 @@ public class Main{
 		}
 	}
 }
-				
+------ Física-------
+package contabancaria;
+import java.util.Scanner;
+public class Física extends Pessoa {
 	
+	public void cadatrar(String nome) {
+		this.nome = nome;
+	}
+	
+	
+}
+------ Pessoa-------
+package contabancaria;
+public class Pessoa {
+	
+	String nome;
+    int saldo = 0;
+	
+    public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(int saldo) {
+		this.saldo = saldo;
+	}
+	public int getCpf() {
+		return cpf;
+	}
+	public void setCpf(int cpf) {
+		this.cpf = cpf;
+	}
+	public int getCnpj() {
+		return cnpj;
+	}
+	public void setCnpj(int cnpj) {
+		this.cnpj = cnpj;
+	}
+	public int getAlternativa() {
+		return alternativa;
+	}
+	public void setAlternativa(int alternativa) {
+		this.alternativa = alternativa;
+	}
+	public int getValor1() {
+		return valor1;
+	}
+	public void setValor1(int valor1) {
+		this.valor1 = valor1;
+	}
+	public int getValor2() {
+		return valor2;
+	}
+	public void setValor2(int valor2) {
+		this.valor2 = valor2;
+	}
+	int cpf = 0;
+	int cnpj = 0;
+	int alternativa = 0;
+	int valor1 = 0;
+	int valor2 = 0;
+	
+	
+	public void Cadastrar() {
+		
+		
+	}
+	
+}
